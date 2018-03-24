@@ -5,7 +5,6 @@
  */
 package start;
 
-import classes.Imposto;
 import classes.Inss;
 import classes.Irrf;
 import java.util.Scanner;
