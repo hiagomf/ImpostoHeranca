@@ -21,12 +21,11 @@ public class Start {
      */
     public static void main(String[] args) {
         Scanner ent = new Scanner(System.in);
-        Imposto im = new Imposto();
         Irrf ir = new Irrf();
         Inss in = new Inss();
         System.out.print("Seu salário: ");
-        im.setSalarioBase(ent.nextDouble());
-        System.out.println("Seu salário: R$ " + im.getSalarioBase() + "\nIRRF: R$ " + ir.calcularImposto() + "\nINSS R$: " + in.calcularImposto());
+        double salario = ent.nextDouble();
+        System.out.println("Seu salário: R$ " + in.getSalarioBase() + "\nIRRF: R$ " + ir.calcularImposto(salario) + "\nINSS R$: " + in.calcularImposto(salario));
     } 
 
 }
