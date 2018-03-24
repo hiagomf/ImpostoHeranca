@@ -9,7 +9,8 @@ package classes;
  *
  * @author Hiago
  */
-public class Imposto {
+public abstract class Imposto {
+
     private double salarioBase;
 
     public double getSalarioBase() {
@@ -19,8 +20,6 @@ public class Imposto {
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
-    
-    public double calcularImposto(){
-        return 0;
-    }
+
+    public abstract double calcularImposto(double salario);
 }

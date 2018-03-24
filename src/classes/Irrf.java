@@ -10,16 +10,9 @@ package classes;
  * @author Hiago
  */
 public class Irrf extends Imposto {
-
-    @Override
-    public double getSalarioBase() {
-        return super.getSalarioBase(); //To change body of generated methods, choose Tools | Templates.
-    }
-
     
     @Override
-    public double calcularImposto() {
-        double salario = super.getSalarioBase();
+    public double calcularImposto(double salario) {
         if (salario <= 1903.98) {
             return 0;
         } else if (salario <= 2826.65) {

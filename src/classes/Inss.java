@@ -12,8 +12,7 @@ package classes;
 public class Inss extends Imposto {
 
     @Override
-    public double calcularImposto() {
-        double salario = super.getSalarioBase();
+    public double calcularImposto(double salario) {
         if (salario <= 1556.94) {
             return salario * 0.085;
         } else if (salario <= 2594.92) {
